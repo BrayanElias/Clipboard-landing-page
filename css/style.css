@@ -1,0 +1,211 @@
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif; 
+}
+header{
+    background-image: url(/images/bg-header-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+header img{
+    padding-top: 90px;
+}
+.header_text{
+    display: inline-block;
+}
+header h2{
+    /* width: 266px; */
+    padding-top: 30px;
+}
+p{
+    font-size: 16px;
+    padding-top: 14px;
+    /* width: 266px; */
+    max-width: 700px;
+    min-width: 300px;
+    line-height: 25px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-bottom: 30px; */
+    color: var(--Dark-Grayish-Blue);
+}
+.btns{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.btns button{
+    font-size: 15px;
+    width: 80%;
+    padding: 12px;
+    border-radius: 18px;
+    color: white;
+    font-weight: bolder;  
+    transition-duration: .6s ;
+    transition-timing-function: ease-in-out;
+}
+.btns button:hover{
+    cursor: pointer;
+    transform: scale(.9);
+}
+.btns button:nth-child(1){
+   background-color: var(--Strong-Cyan);
+   border: 1px solid var(--Strong-Cyan);
+}
+.btns button:nth-child(2){
+    background-color: var(--Light-Blue);
+    border: 1px solid var(--Light-Blue);
+ }
+
+ main{
+    padding-top: 50px;
+    text-align: center;
+    padding: 50px 26px ;
+ }
+ .info__apps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ /* .info__app h2{
+    width: 240px;
+    justify-content: center;
+    display: inline-block;
+ } */
+main h2{
+    padding-top: 20px;
+}
+ .info__monitor img{
+    width: 100%;
+    margin-bottom: 50px;
+    max-width: 800px;
+ }
+ .info__tablet img{
+    width: 100%;
+    margin-bottom: 50px;
+    max-width: 800px;
+ }
+.logos__marcas{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+.logos__marcas img{
+    width: 150px;
+    padding-bottom: 80px;
+}
+
+.faqs__footer{
+    background-color: #f5f6f8;
+    text-align: center;
+}
+.faqs__footer img{
+    width: 40px;
+    padding-top: 30px;
+}
+.footer__contact .footer__contact_top,
+.footer__contact_bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+}
+.redes-sociales__footer{
+    width: 300px;
+    height: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 40px;
+}
+
+@media (min-width: 768px){
+    header{
+        background-image: url(/images/bg-header-desktop.png);
+    }
+    .btns {
+        flex-direction: row;
+    }
+    .btns button{
+        width: 170px;
+    }
+    .flex__monitor{
+        display: flex;
+        gap: 100px;
+        text-align: start;
+    }
+ 
+    .secciones__texto p{
+        max-width: 330px;
+    }
+    .flex__preview{
+        display: flex;
+        gap: 40px;
+        padding-left: 70px;
+        padding-top: 50px;
+    }
+    .flex__preview p{
+        width: 330px;
+    }
+   .logos__marcas {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   }
+   .logos__marcas img{
+    max-width: 130px;
+   }
+   .faqs__footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+   }
+   .footer__contact{
+    width: 530px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+   }  
+   .footer__contact .footer__contact_top,
+.footer__contact_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+}
+   .footer__contact .footer__contact_top{
+    gap: 100px;
+   }
+   .footer__contact .footer__contact_bottom{
+  
+    gap: 50px;
+   }
+}
